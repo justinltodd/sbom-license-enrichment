@@ -90,9 +90,9 @@ def normalize_license(license_str):
 
 # ---------------- Helper Functions ----------------
 def is_internal(pkg_name):
-    """Identify internal/replaced modules"""
+    """Identify internal/modules"""
     return (
-        "replaced_modules/" in pkg_name or
+        "modules/" in pkg_name or 
         "vendor/" in pkg_name or
         #"company" in pkg_name or
         pkg_name.strip() == "" or
